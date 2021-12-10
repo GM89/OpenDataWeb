@@ -1,0 +1,155 @@
+.logo {
+    display: block;
+  /*   height:30%; */
+    max-height:150px;
+    min-height:150px;
+   /*  width:30%; */
+    max-width:150px;
+    min-width:150px;
+    position:relative;
+    z-index: 2;      
+ }
+
+ .secondlogo {
+  
+/*   height:30%; */
+  max-height:150px;
+  min-height:150px;
+ /*  width:30%; */
+  max-width:150px;
+  min-width:150px;
+  position:relative;
+  z-index: 2;   
+  align-self:flex-end;  
+
+}
+ 
+ .email{
+   float:right;
+          
+ }
+ 
+ .top_flex{
+  display:flex;
+  justify-content: space-between;
+  padding-right: 25px;
+  padding-left:25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+    
+}
+
+
+.footer{
+text-align: center;
+padding: 0px  0px 15px 15px;
+background-color:#7d6ceb;
+color: white;
+border:solid;
+border-color:black;
+border-width:thin;
+margin-bottom:30px;
+text-align:center;
+
+}
+
+.checkbox{
+  display: inline-block;
+  margin:auto;
+}
+
+#name_search { 
+  display: inline;
+}
+
+#state_form_div{
+  display: inline;
+}
+
+tbody a{
+  color:darkblue;
+}
+
+
+.small-table{
+  display: inline-block; 
+  
+}
+.main-text-box{
+  display: inline-block;
+}
+
+.flex1{
+  display:flex;
+  justify-content: space-around;
+}
+
+
+.flex2{
+  display:flex;
+  justify-content: space-around;
+}
+
+.flex1 .main-text-box{
+width:500px;
+padding:10px;
+}
+
+.flex1 .small-table{
+width:500px;
+position:relative;
+padding:10px;
+
+
+}
+
+.flex2 .small-table{
+  width:500px;
+position:relative;
+padding:10px;
+}
+
+.grid{
+display:grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: auto;
+grid-gap:30px;
+padding:30px;
+}
+
+
+
+
+
+
+#spinner{
+  visibility: hidden;
+  width: 80px;
+  height: 80px;
+
+  border: 5px solid purple;
+  border-top:3px solid #f25a41;
+  border-radius: 100%;
+
+  position: absolute;
+  top:300px;
+  bottom:0;
+  left:0;
+  right: 0;
+  margin: auto;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  } to {
+      transform: rotate(360deg);
+  }
+}
+
+#spinner.show {
+  visibility: visible;
+}
